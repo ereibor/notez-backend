@@ -9,6 +9,7 @@ import { envValidationSchema } from './config/env.schema';
   imports: [
     ConfigModule.forRoot({
       isGlobal: true,
+      expandVariables: true,
       validationSchema: envValidationSchema,
       validationOptions: { convert: true },
     }),
